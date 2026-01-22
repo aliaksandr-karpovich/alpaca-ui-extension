@@ -1,5 +1,5 @@
 
-async function myFunction() {
+async function fixPositionsTableWidth() {
     if (globalThis.location.href.startsWith('https://app.alpaca.markets/account/positions')) {
 
         const wrapper = document.getElementById('page-wrapper');
@@ -13,8 +13,8 @@ async function myFunction() {
     } else {
         console.log('not positions page');
     }
-    setTimeout(myFunction, 3000);
+    setTimeout(fixPositionsTableWidth, 3000);
 }
 
 
-setTimeout(myFunction, 3000);
+setTimeout(fixPositionsTableWidth, 3000);
