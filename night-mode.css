@@ -1,0 +1,116 @@
+body, #page-wrapper {
+  background-color: #0d1117 !important;
+  color: #c9d1d9 !important;
+}
+header, nav, [class*="Header"], [class*="header"], [class*="Navbar"], [class*="navbar"] {
+  background-color: #161b22 !important;
+  color: #c9d1d9 !important;
+}
+[class*="Sidebar"], [class*="sidebar"], aside {
+  background-color: #161b22 !important;
+  color: #c9d1d9 !important;
+}
+main, section, article, [class*="Card"], [class*="card"],
+[class*="Panel"], [class*="panel"], [class*="Container"],
+[class*="content"], [class*="Content"] {
+  background-color: #161b22 !important;
+  color: #c9d1d9 !important;
+}
+.bg-white {
+  background-color: #161b22 !important;
+}
+.bg-gray-50 {
+  background-color: #21262d !important;
+}
+.bg-gray-100, .bg-gray-200, .bg-zinc-100 {
+  background-color: #1c2433 !important;
+}
+[style*="background-clip"] {
+  background-clip: border-box !important;
+}
+table, thead, tbody, tr, th, td {
+  background-color: #161b22 !important;
+  color: #c9d1d9 !important;
+  border-color: #30363d !important;
+}
+tr:hover td {
+  background-color: #1c2433 !important;
+}
+input, select, textarea, button {
+  background-color: #21262d !important;
+  color: #c9d1d9 !important;
+  border-color: #30363d !important;
+}
+a {
+  color: #58a6ff !important;
+}
+h1, h2, h3, h4, h5, h6, p, span, label, li {
+  color: #c9d1d9 !important;
+}
+[class*="text-green"], [class*="positive"] {
+  color: #3fb950 !important;
+}
+[class*="text-red"], [class*="negative"] {
+  color: #f85149 !important;
+}
+.text-gray-900, .text-cool-gray-800 {
+  color: #c9d1d9 !important;
+}
+.bg-yellow-300, .bg-yellow-200 {
+  background-color: #d4a017 !important;
+  color: #0d1117 !important;
+}
+.bg-yellow-300:hover, .hover\:bg-yellow-200:hover {
+  background-color: #e6b422 !important;
+  color: #0d1117 !important;
+}
+.bg-yellow-50 {
+  background-color: #2a2216 !important;
+}
+.bg-yellow-100, .hover\:bg-yellow-100:hover {
+  background-color: #332a14 !important;
+}
+.hover\:bg-gray-50:hover {
+  background-color: #1c2433 !important;
+}
+.hover\:bg-rose-50:hover {
+  background-color: #2a1520 !important;
+}
+.text-gray-700 {
+  color: #8b949e !important;
+}
+.text-gray-800 {
+  color: #c9d1d9 !important;
+}
+.border-gray-400 {
+  border-color: #30363d !important;
+}
+.border-cool-gray-200 {
+  border-color: #30363d !important;
+}
+.bg-cool-gray-200 {
+  background-color: #30363d !important;
+}
+dialog {
+  background-color: #161b22 !important;
+  border-color: #30363d !important;
+}
+.text-gray-600 {
+  color: #8b949e !important;
+}
+[class*="border"] {
+  border-color: #30363d !important;
+}
+[class*="shadow"] {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4) !important;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #161b22;
+}
+::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 4px;
+}

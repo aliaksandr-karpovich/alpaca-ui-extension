@@ -2,12 +2,22 @@
   "manifest_version": 3,
   "name": "Alpaca Markets extension",
   "description": "Alpaca markets extension",
-  "version": "1.0",
-  "permissions": ["activeTab", "scripting", "offscreen", "clipboardWrite","identity"],
+  "version": "1.1",
+  "permissions": ["activeTab", "scripting", "offscreen", "clipboardWrite", "identity", "storage"],
   "host_permissions": ["https://app.alpaca.markets/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Alpaca Extension"
+  },
   "background": {
 
   },
+  "web_accessible_resources": [
+    {
+      "resources": ["night-mode.css"],
+      "matches": ["<all_urls>"]
+    }
+  ],
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
