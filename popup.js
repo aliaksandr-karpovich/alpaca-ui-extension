@@ -1,16 +1,16 @@
-const toggle = document.getElementById('nightToggle');
+const toggle = document.getElementById('darkToggle');
 
-chrome.storage.local.get('nightMode', (data) => {
-  toggle.checked = !!data.nightMode;
+chrome.storage.local.get('darkMode', (data) => {
+  toggle.checked = !!data.darkMode;
 });
 
 toggle.addEventListener('change', () => {
   const enabled = toggle.checked;
-  chrome.storage.local.set({ nightMode: enabled });
+  chrome.storage.local.set({ darkMode: enabled });
 
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
     if (tabs[0]?.id) {
-      chrome.tabs.sendMessage(tabs[0].id, { nightMode: enabled });
+      chrome.tabs.sendMessage(tabs[0].id, { darkMode: enabled });
     }
   });
 });

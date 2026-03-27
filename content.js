@@ -1,14 +1,14 @@
 
-const NIGHT_MODE_ID = 'alpaca-ext-night-mode';
+const DARK_MODE_ID = 'alpaca-ext-dark-mode';
 
-function applyNightMode(enabled) {
-  let link = document.getElementById(NIGHT_MODE_ID);
+function applyDarkMode(enabled) {
+  let link = document.getElementById(DARK_MODE_ID);
   if (enabled) {
     if (!link) {
       link = document.createElement('link');
-      link.id = NIGHT_MODE_ID;
+      link.id = DARK_MODE_ID;
       link.rel = 'stylesheet';
-      link.href = chrome.runtime.getURL('night-mode.css');
+      link.href = chrome.runtime.getURL('dark-mode.css');
       document.head.appendChild(link);
     }
   } else if (link) {
@@ -16,13 +16,13 @@ function applyNightMode(enabled) {
   }
 }
 
-chrome.storage.local.get('nightMode', (data) => {
-  applyNightMode(!!data.nightMode);
+chrome.storage.local.get('darkMode', (data) => {
+  applyDarkMode(!!data.darkMode);
 });
 
 chrome.runtime.onMessage.addListener((msg) => {
-  if (msg.nightMode !== undefined) {
-    applyNightMode(msg.nightMode);
+  if (msg.darkMode !== undefined) {
+    applyDarkMode(msg.darkMode);
   }
 });
 
