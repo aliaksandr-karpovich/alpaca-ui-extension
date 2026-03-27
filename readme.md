@@ -1,4 +1,4 @@
-This is a small chrome extension with some small UI improvements to https://alpaca.markets website.
+This is a small chrome extension with some small UI improvements to https://app.alpaca.markets website.
 
 ## Installation
 1. Clone this repo 
