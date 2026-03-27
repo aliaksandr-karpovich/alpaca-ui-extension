@@ -15,12 +15,12 @@
   "web_accessible_resources": [
     {
       "resources": ["dark-mode.css"],
-      "matches": ["<all_urls>"]
+      "matches": ["https://app.alpaca.markets/*"]
     }
   ],
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": ["https://app.alpaca.markets/*"],
       "js": ["content.js"],
       "run_at": "document_idle"
     }
