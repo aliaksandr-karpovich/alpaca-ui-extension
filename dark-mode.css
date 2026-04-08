@@ -16,7 +16,7 @@ main, section, article, [class*="Card"], [class*="card"],
   background-color: #161b22 !important;
   color: #c9d1d9 !important;
 }
-.bg-white {
+.bg-white, [class*="bg-[#FFF"], [class*="bg-[#fff"], [class*="bg-[#FFFFFF"], [class*="bg-[#ffffff"] {
   background-color: #161b22 !important;
 }
 .bg-gray-50 {
@@ -36,10 +36,13 @@ table, thead, tbody, tr, th, td {
 tr:hover td {
   background-color: #1c2433 !important;
 }
-input, select, textarea, button {
+input, select, textarea {
   background-color: #21262d !important;
   color: #c9d1d9 !important;
   border-color: #30363d !important;
+}
+button {
+  color: #c9d1d9 !important;
 }
 a {
   color: #58a6ff !important;
@@ -47,7 +50,7 @@ a {
 h1, h2, h3, h4, h5, h6, p, span, label, li {
   color: #c9d1d9 !important;
 }
-[class*="text-green"], [class*="positive"] {
+[class*="text-green"], [class*="text-emerald"], [class*="positive"] {
   color: #3fb950 !important;
 }
 [class*="text-red"], [class*="negative"] {
@@ -103,6 +106,31 @@ dialog {
 }
 [class*="shadow"] {
   box-shadow: 0 1px 3px rgba(0,0,0,0.4) !important;
+}
+/* Hardcoded text colors from Tailwind arbitrary values */
+[class*="text-[#282828"], [class*="text-[#565656"], [class*="text-[#696969"] {
+  color: #c9d1d9 !important;
+}
+/* Hover states with hardcoded light backgrounds */
+[class*="hover:bg-[#F8F8F8"]:hover, [class*="hover:bg-[#f8f8f8"]:hover {
+  background-color: #1c2433 !important;
+}
+/* Indigo badge/tab dark variants */
+.bg-indigo-50, [class*="bg-indigo-50"] {
+  background-color: #1c1f3a !important;
+}
+[class*="text-indigo-600"] {
+  color: #818cf8 !important;
+}
+[class*="bg-[#4F46E5"] {
+  background-color: #818cf8 !important;
+}
+[class*="text-[#4F46E5"] {
+  color: #818cf8 !important;
+}
+/* Gray tab text */
+.text-gray-500 {
+  color: #8b949e !important;
 }
 ::-webkit-scrollbar {
   width: 8px;
