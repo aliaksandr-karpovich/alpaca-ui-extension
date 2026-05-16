@@ -29,7 +29,7 @@ chrome.runtime.onMessage.addListener((msg) => {
 async function fixPositionsTableWidth() {
   if (globalThis.location.href.startsWith('https://app.alpaca.markets/account/positions')) {
     const wrapper = document.getElementById('page-wrapper');
-    if (wrapper && wrapper.children[1]) {
+    if (wrapper?.children[1]) {
       const secondChild = wrapper.children[1];
       secondChild.classList.remove('max-w-6xl');
       secondChild.style.maxWidth = '1500px !important';
@@ -38,4 +38,4 @@ async function fixPositionsTableWidth() {
   setTimeout(fixPositionsTableWidth, 3000);
 }
 
-setTimeout(fixPositionsTableWidth, 3000);
+setTimeout(fixPositionsTableWidth, 500);

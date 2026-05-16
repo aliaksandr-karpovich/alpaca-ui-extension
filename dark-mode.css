@@ -16,14 +16,23 @@ main, section, article, [class*="Card"], [class*="card"],
   background-color: #161b22 !important;
   color: #c9d1d9 !important;
 }
-.bg-white, [class*="bg-[#FFF"], [class*="bg-[#fff"], [class*="bg-[#FFFFFF"], [class*="bg-[#ffffff"] {
+.bg-white, [class*="bg-[#FFF"], [class*="bg-[#fff"], [class*="bg-[#FFFFFF"], [class*="bg-[#ffffff"],
+.hover\:bg-white:hover, .focus\:bg-white:focus, .active\:bg-white:active {
   background-color: #161b22 !important;
 }
-.bg-gray-50 {
+.bg-gray-50, .bg-cool-gray-50 {
   background-color: #21262d !important;
 }
-.bg-gray-100, .bg-gray-200, .bg-zinc-100 {
+.bg-gray-100, .bg-gray-200, .bg-zinc-100, .bg-cool-gray-100 {
   background-color: #1c2433 !important;
+}
+[data-testid="account-switcher-button"],
+[data-testid="account-switcher-button"]:hover,
+[data-testid="account-switcher-button"]:focus,
+[data-testid="account-switcher-button"]:active,
+[data-testid="account-switcher-button"].tether-enabled {
+  background-color: #21262d !important;
+  color: #c9d1d9 !important;
 }
 [style*="background-clip"] {
   background-clip: border-box !important;
@@ -56,7 +65,7 @@ h1, h2, h3, h4, h5, h6, p, span, label, li {
 [class*="text-red"], [class*="negative"] {
   color: #f85149 !important;
 }
-.text-gray-900, .text-cool-gray-800 {
+.text-gray-900, .text-cool-gray-800, .text-black {
   color: #c9d1d9 !important;
 }
 .bg-yellow-300, .bg-yellow-200 {
