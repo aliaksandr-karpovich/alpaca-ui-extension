@@ -10,10 +10,14 @@ header, nav, [class*="Header"], [class*="header"], [class*="Navbar"], [class*="n
   background-color: #161b22 !important;
   color: #c9d1d9 !important;
 }
-main, section, article, [class*="Card"], [class*="card"],
+main, article, [class*="Card"], [class*="card"],
 [class*="Panel"], [class*="panel"], [class*="Container"],
 [class*="content"], [class*="Content"] {
   background-color: #161b22 !important;
+  color: #c9d1d9 !important;
+}
+section {
+  background-color: transparent !important;
   color: #c9d1d9 !important;
 }
 .bg-white, [class*="bg-[#FFF"], [class*="bg-[#fff"], [class*="bg-[#FFFFFF"], [class*="bg-[#ffffff"],
@@ -42,6 +46,12 @@ table, thead, tbody, tr, th, td {
   color: #c9d1d9 !important;
   border-color: #30363d !important;
 }
+th, th div, th span, th p {
+  color: #c9d1d9 !important;
+  -webkit-text-fill-color: #c9d1d9 !important;
+  background-clip: border-box !important;
+  -webkit-background-clip: border-box !important;
+}
 tr:hover td {
   background-color: #1c2433 !important;
 }
@@ -65,7 +75,7 @@ h1, h2, h3, h4, h5, h6, p, span, label, li {
 [class*="text-red"], [class*="negative"] {
   color: #f85149 !important;
 }
-.text-gray-900, .text-cool-gray-800, .text-black {
+.text-gray-900, .text-gray-950, .text-cool-gray-800, .text-cool-gray-900, .text-black {
   color: #c9d1d9 !important;
 }
 .bg-yellow-300, .bg-yellow-200 {
@@ -74,6 +84,11 @@ h1, h2, h3, h4, h5, h6, p, span, label, li {
 }
 .bg-yellow-300:hover, .hover\:bg-yellow-200:hover {
   background-color: #e6b422 !important;
+  color: #0d1117 !important;
+}
+.bg-yellow-300 span, .bg-yellow-200 span, .bg-yellow-100 span,
+.bg-yellow-300 p, .bg-yellow-200 p, .bg-yellow-100 p,
+.bg-yellow-300 label, .bg-yellow-200 label, .bg-yellow-100 label {
   color: #0d1117 !important;
 }
 .bg-yellow-50 {
@@ -137,9 +152,30 @@ dialog {
 [class*="text-[#4F46E5"] {
   color: #818cf8 !important;
 }
+/* Blue badge/banner dark variants */
+.bg-blue-50, [class*="bg-blue-50"] {
+  background-color: #16223a !important;
+}
+.bg-blue-100, [class*="bg-blue-100"] {
+  background-color: #1e2a4a !important;
+}
+[class*="text-blue-500"], [class*="text-blue-600"], [class*="text-blue-700"] {
+  color: #60a5fa !important;
+}
 /* Gray tab text */
 .text-gray-500 {
   color: #8b949e !important;
+}
+/* SVGs with hardcoded near-black stroke/fill */
+svg [stroke="#010101"], svg [stroke="#000000"], svg [stroke="#000"],
+svg [stroke="black"], svg [stroke="#111"], svg [stroke="#1A1A1A"],
+svg [stroke="#1a1a1a"] {
+  stroke: #c9d1d9 !important;
+}
+svg [fill="#010101"], svg [fill="#000000"], svg [fill="#000"],
+svg [fill="black"], svg [fill="#111"], svg [fill="#1A1A1A"],
+svg [fill="#1a1a1a"] {
+  fill: #c9d1d9 !important;
 }
 ::-webkit-scrollbar {
   width: 8px;
