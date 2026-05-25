@@ -75,7 +75,8 @@ h1, h2, h3, h4, h5, h6, p, span, label, li {
 [class*="text-red"], [class*="negative"] {
   color: #f85149 !important;
 }
-.text-gray-900, .text-gray-950, .text-cool-gray-800, .text-cool-gray-900, .text-black {
+.text-gray-900, .text-gray-950, .text-cool-gray-800, .text-cool-gray-900, .text-black,
+.text-zinc-800, .text-zinc-900, .text-zinc-950 {
   color: #c9d1d9 !important;
 }
 .bg-yellow-300, .bg-yellow-200 {
