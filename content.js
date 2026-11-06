@@ -2,6 +2,8 @@
 const DARK_MODE_ID = 'alpaca-ext-dark-mode';
 
 function applyDarkMode(enabled) {
+  // Read by chart-dark.js (MAIN world) to recolor canvas chart fills
+  document.documentElement.toggleAttribute('data-alpaca-ext-dark', enabled);
   let link = document.getElementById(DARK_MODE_ID);
   if (enabled) {
     if (!link) {

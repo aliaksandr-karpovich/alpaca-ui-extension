@@ -1,3 +1,16 @@
+/* New Alpaca UI reads colors from --theme-* variables (cards, text, chart) */
+:root, * {
+  --theme-surfaces-primary: #0d1117 !important;
+  --theme-surfaces-secondary: #161b22 !important;
+  --theme-surfaces-tertiary: #21262d !important;
+  --theme-borders-default: #30363d !important;
+  --theme-typography-primary: #c9d1d9 !important;
+  --theme-typography-secondary: #8b949e !important;
+  --theme-typography-tertiary: #8b949e !important;
+  --theme-typography-success: #3fb950 !important;
+  --theme-typography-error: #f85149 !important;
+  --theme-typography-danger: #f85149 !important;
+}
 body, #page-wrapper {
   background-color: #0d1117 !important;
   color: #c9d1d9 !important;
@@ -19,6 +32,10 @@ main, article, [class*="Card"], [class*="card"],
 section {
   background-color: transparent !important;
   color: #c9d1d9 !important;
+}
+/* Chart canvases (e.g. home portfolio chart has class="content") must stay transparent */
+canvas, canvas[class*="content"], canvas[class*="Content"] {
+  background-color: transparent !important;
 }
 .bg-white, [class*="bg-[#FFF"], [class*="bg-[#fff"], [class*="bg-[#FFFFFF"], [class*="bg-[#ffffff"],
 .hover\:bg-white:hover, .focus\:bg-white:focus, .active\:bg-white:active {
