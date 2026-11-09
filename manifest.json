@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Alpaca Markets extension",
   "description": "Alpaca markets extension",
-  "version": "1.5",
+  "version": "1.6",
   "permissions": ["storage"],
   "host_permissions": ["https://app.alpaca.markets/*"],
   "action": {
@@ -23,7 +23,7 @@
     },
     {
       "matches": ["https://app.alpaca.markets/*"],
-      "js": ["chart-dark.js"],
+      "js": ["chart-dark.js", "chart-gaps.js"],
       "run_at": "document_start",
       "world": "MAIN"
     }
